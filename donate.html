@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Donate - HelpingHands</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-600">HelpingHands</h1>
+      <nav class="space-x-4">
+        <a href="index.html" class="text-gray-600 hover:text-blue-600">Home</a>
+        <a href="about.html" class="text-gray-600 hover:text-blue-600">About</a>
+        <a href="work.html" class="text-gray-600 hover:text-blue-600">Our Work</a>
+        <a href="get-involved.html" class="text-gray-600 hover:text-blue-600">Get Involved</a>
+        <a href="donate.html" class="text-blue-600 font-semibold">Donate</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-blue-600 text-white py-16 text-center">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-2">Make a Difference</h2>
+      <p class="text-lg">Your donation helps us empower children, women, and communities. Every contribution counts.</p>
+    </div>
+  </section>
+
+  <!-- Donation Form -->
+  <section class="py-12 bg-white">
+    <div class="container mx-auto px-6 max-w-2xl">
+      <h3 class="text-2xl font-bold text-blue-600 mb-6 text-center">Donation Form</h3>
+      <form class="space-y-6 bg-gray-100 p-6 rounded-lg shadow-lg">
+        <!-- Amount -->
+        <div>
+          <label class="block text-sm font-medium mb-2">Donation Amount</label>
+          <div class="grid grid-cols-3 gap-4">
+            <button type="button" class="bg-white border rounded-lg px-4 py-2 hover:bg-blue-50">₹500</button>
+            <button type="button" class="bg-white border rounded-lg px-4 py-2 hover:bg-blue-50">₹1000</button>
+            <button type="button" class="bg-white border rounded-lg px-4 py-2 hover:bg-blue-50">₹5000</button>
+          </div>
+          <input type="number" placeholder="Or enter custom amount" class="mt-4 w-full px-4 py-2 border rounded-lg">
+        </div>
+
+        <!-- Frequency -->
+        <div>
+          <label class="block text-sm font-medium mb-2">Donation Frequency</label>
+          <select class="w-full px-4 py-2 border rounded-lg">
+            <option>One-time</option>
+            <option>Monthly</option>
+            <option>Quarterly</option>
+            <option>Annually</option>
+          </select>
+        </div>
+
+        <!-- Program Support -->
+        <div>
+          <label class="block text-sm font-medium mb-2">Support a Program</label>
+          <select class="w-full px-4 py-2 border rounded-lg">
+            <option>Where most needed</option>
+            <option>Child Education</option>
+            <option>Women Empowerment</option>
+            <option>Healthcare Services</option>
+            <option>Livelihood Programs</option>
+          </select>
+        </div>
+
+        <!-- Payment Method -->
+        <div>
+          <label class="block text-sm font-medium mb-2">Choose Payment Method</label>
+          <div class="space-y-2">
+            <label class="flex items-center">
+              <input type="radio" name="payment" class="mr-2"> Credit/Debit Card
+            </label>
+            <label class="flex items-center">
+              <input type="radio" name="payment" class="mr-2"> PayPal
+            </label>
+            <label class="flex items-center">
+              <input type="radio" name="payment" class="mr-2"> Razorpay
+            </label>
+            <label class="flex items-center">
+              <input type="radio" name="payment" class="mr-2"> UPI
+            </label>
+          </div>
+        </div>
+
+        <!-- Donor Info -->
+        <div>
+          <label class="block text-sm font-medium mb-2">Full Name</label>
+          <input type="text" class="w-full px-4 py-2 border rounded-lg" required>
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-2">Email Address</label>
+          <input type="email" class="w-full px-4 py-2 border rounded-lg" required>
+        </div>
+
+        <!-- Submit -->
+        <div class="text-center">
+          <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">Donate Now</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white py-6 text-center shadow-inner mt-12">
+    <p class="text-gray-600 text-sm">&copy; 2025 HelpingHands. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
